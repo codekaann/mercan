@@ -36,8 +36,8 @@ client.on('messageCreate', msg => {
   const { joinVoiceChannel } = require('@discordjs/voice');
   client.on('ready', () => { 
    joinVoiceChannel({
- channelId: "1137478341906141284",
- guildId: "1126439796223524885",       
- adapterCreator: client.guilds.cache.get("1126439796223524885").voiceAdapterCreator
+ channelId: "1491165081810108447",
+ guildId: "984874881869029448",       
+ adapterCreator: client.guilds.cache.get("984874881869029448").voiceAdapterCreator
      });
  });
