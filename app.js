@@ -27,7 +27,7 @@ client.on('messageCreate', msg => {
   });
 
   client.on('messageCreate', msg => {
-    if (msg.content.toLowerCase() === '<@787926529924792390>') {
+    if (msg.content.toLowerCase() === '<@545651586559377410>') {
       msg.channel.send(':shrug: Meşgul olma ihtimali yüksek, gidip destek talebi açmayı dene. → <#1012629878597759017>');
     }
   });
