@@ -4,6 +4,7 @@ const client = new Client({
     intents: 33283 
 });
 
+const token = process.env.TOKEN;
 
 const settings =  require("./config.js");
 
@@ -12,7 +13,7 @@ import("./handler.js");
 global.client = client;
 
 
-client.login(settings.bot.token)
+client.login(token)
     .catch(e => console.log("[BOT] Bota giriş yapılırken bir hata oluştu:\n" + e));
 
 
@@ -25,8 +26,8 @@ client.on('messageCreate', msg => {
   });
 
   client.on('messageCreate', msg => {
-    if (msg.content.toLowerCase() === '<@545651586559377410>') {
-      msg.channel.send(':shrug: Uyuyodur o boşver sen onu, git talep oluştur. → <#1137470676693950635>');
+    if (msg.content.toLowerCase() === '<@787926529924792390>') {
+      msg.channel.send(':shrug: Meşgul olma ihtimali yüksek, gidip destek talebi açmayı dene. → <#1012629878597759017>');
     }
   });
 
